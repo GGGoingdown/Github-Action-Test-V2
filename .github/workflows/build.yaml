@@ -1,9 +1,11 @@
 name: Build and Push to Google Artifact Registry
 
 on:
-  push:
-    tags:
-      - "*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to build and push"
+        required: true
 
 env:
   PROJECT_ID: earthbook2
