@@ -2,6 +2,22 @@
 
 
 
+## v0.2.0 (2024-05-01)
+
+### Feature
+
+* feat(api): Refactor API routing using FastAPI in src
+
+- Introduce a new `src/api.py` file to centralize API endpoint implementations using FastAPI.
+- Replace multiple route handlers in `src/main.py` with a single router inclusion from `src/api.py` to streamline the application structure. ([`9504d7c`](https://github.com/GGGoingdown/Github-Actions-Test/commit/9504d7c03311c15b76b449beef05b0d318b4afe9))
+
+### Unknown
+
+* Merge pull request #2 from GGGoingdown/develop
+
+feat(api): Refactor API routing using FastAPI in src ([`e75f4ce`](https://github.com/GGGoingdown/Github-Actions-Test/commit/e75f4ce42efcd5c351526581efc9432a7331c880))
+
+
 ## v0.1.1 (2024-05-01)
 
 ### Fix
