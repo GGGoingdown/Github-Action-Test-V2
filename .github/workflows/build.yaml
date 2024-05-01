@@ -1,0 +1,62 @@
+name: Build and Push to Google Artifact Registry
+
+on:
+  workflow_run:
+    workflows: ["Semantic Release"]
+    types:
+      - completed
+
+env:
+  PROJECT_ID: earthbook2
+  REGION: asia-east1
+  GAR_LOCATION: asia-east1-docker.pkg.dev/earthbook2/earthbook-docker-registry/earthbook/drone-remote-id
+
+jobs:
+  build-push-artifact:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v3"
+
+      - name: "Get the current tag"
+        id: get_tag
+        run: |
+          echo "CURRENT_TAG=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+          echo $CURRENT_TAG
+
+      - name: "auth"
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: "${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}"
+
+      - name: "Set up Cloud SDK"
+        uses: "google-github-actions/setup-gcloud@v1"
+
+      - name: "Use gcloud CLI"
+        run: "gcloud info"
+
+      - name: "Docker auth"
+        run: |-
+          gcloud auth configure-docker ${{ env.REGION }}-docker.pkg.dev --quiet
+
+      - name: "Get the current tag"
+        id: get_tag
+        run: echo "CURRENT_TAG=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+
+      - name: Build and Push Image
+        run: |
+          docker build . --file Dockerfile --tag ${{ env.GAR_LOCATION }}:${{ env.CURRENT_TAG }} --tag ${{ env.GAR_LOCATION }}:latest
+          docker push ${{ env.GAR_LOCATION }}:${{ env.CURRENT_TAG }}
+          docker push ${{ env.GAR_LOCATION }}:latest
+
+      - name: Send Telegram Message
+        uses: cbrgm/telegram-github-action@v1
+        if: always()
+        with:
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref }}
+            Message: ${{ job.status == 'success' && 'Build image succeeded. Good job.' || 'Build image failed. Fix me please.' }}
