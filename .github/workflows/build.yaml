@@ -1,8 +1,9 @@
 name: Build and Push to Google Artifact Registry
 
 on:
-  release:
-    types: [published, created]
+  create:
+    tags:
+      - "*"
 
 env:
   PROJECT_ID: earthbook2
