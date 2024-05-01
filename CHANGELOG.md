@@ -2,6 +2,19 @@
 
 
 
+## v0.12.0 (2024-05-01)
+
+### Feature
+
+* feat(api): update api ([`4b41eb8`](https://github.com/GGGoingdown/Github-Actions-Test/commit/4b41eb871cbbf799a006f666c686d53de552e099))
+
+* feat: use workflow_dispatch ([`0afe65b`](https://github.com/GGGoingdown/Github-Actions-Test/commit/0afe65b4ba56b3a0e17ab4401dcf025c671e92de))
+
+### Fix
+
+* fix(api): update api ([`d14406f`](https://github.com/GGGoingdown/Github-Actions-Test/commit/d14406f63bf0330c3820c5d1ad295295900a8ccc))
+
+
 ## v0.11.0 (2024-05-01)
 
 ### Feature
