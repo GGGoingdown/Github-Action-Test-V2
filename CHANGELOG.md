@@ -2,6 +2,13 @@
 
 
 
+## v0.7.0 (2024-05-01)
+
+### Feature
+
+* feat: updatge trigger condition from tag to release ([`6567418`](https://github.com/GGGoingdown/Github-Actions-Test/commit/656741877a639f7422e4ecb0281f90c035ce8717))
+
+
 ## v0.6.0 (2024-05-01)
 
 ### Feature
