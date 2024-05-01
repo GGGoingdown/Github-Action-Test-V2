@@ -22,3 +22,8 @@ def read_user_me():
 @app.get("/users/{user_id}")
 def read_user(user_id: str):
     return {"user_id": user_id}
+
+
+@app.get("/items/")
+def read_items(q: str = None):
+    return {"q": q}
