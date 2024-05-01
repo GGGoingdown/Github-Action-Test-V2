@@ -25,5 +25,5 @@ jobs:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Perform tasks
-        if: ${{ steps.release.outputs.released }} == 'true'
+        if: ${{ steps.release.outputs.released }} == 'no_release'
         run: echo "Performing tasks after a new release"
