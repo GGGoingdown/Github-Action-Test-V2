@@ -1,10 +1,9 @@
 name: Build and Push to Google Artifact Registry
 
 on:
-  workflow_run:
-    workflows: ["Semantic Release"]
-    types:
-      - completed
+  push:
+    tags:
+      - "*"
 
 env:
   PROJECT_ID: earthbook2
@@ -13,7 +12,6 @@ env:
 
 jobs:
   build-push-artifact:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout"
@@ -39,10 +37,6 @@ jobs:
       - name: "Docker auth"
         run: |-
           gcloud auth configure-docker ${{ env.REGION }}-docker.pkg.dev --quiet
-
-      - name: "Get the current tag"
-        id: get_tag
-        run: echo "CURRENT_TAG=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
 
       - name: Build and Push Image
         run: |
