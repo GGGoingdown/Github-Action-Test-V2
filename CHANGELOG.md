@@ -2,6 +2,15 @@
 
 
 
+## v0.16.0 (2024-05-01)
+
+### Feature
+
+* feat(api): create output ([`beab09f`](https://github.com/GGGoingdown/Github-Actions-Test/commit/beab09f72bcbcc7ee20e4ff831e6489dd13452b2))
+
+* feat(api): create output ([`0d0aa20`](https://github.com/GGGoingdown/Github-Actions-Test/commit/0d0aa20ed53763a0c8375f33dccc7d629ec54fa6))
+
+
 ## v0.15.0 (2024-05-01)
 
 ### Feature
