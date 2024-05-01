@@ -27,3 +27,20 @@ jobs:
       - name: Perform tasks
         if: steps.release.outputs.released == 'true'
         run: echo "Performing tasks after a new release"
+
+  build-push-artifact:
+    needs: release
+    if: needs.release.outputs.released == 'true'
+    runs-on: ubuntu-latest
+    env:
+      PROJECT_ID: earthbook2
+      REGION: asia-east1
+      GAR_LOCATION: asia-east1-docker.pkg.dev/earthbook2/earthbook-docker-registry/earthbook/drone-remote-id
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: show VERSION
+        run: |
+          echo ${{ needs.release.outputs.version }}
+          echo ${{ needs.release.outputs.tag }}
