@@ -2,6 +2,32 @@
 
 
 
+## v0.1.1 (2024-05-01)
+
+### Fix
+
+* fix: Enhance debugging in read_item function
+
+- Review added debug statement for clarity in the `read_item` function of `src/main.py` to track `item_id` processing.
+- Ensure newly introduced debug code does not affect existing functionalities and complies with performance standards. ([`e44bdc1`](https://github.com/GGGoingdown/Github-Actions-Test/commit/e44bdc1abf6417a2ffeed2f7170c69bd2c0984be))
+
+### Unknown
+
+* Merge pull request #1 from GGGoingdown/develop
+
+Develop ([`2b103fd`](https://github.com/GGGoingdown/Github-Actions-Test/commit/2b103fd0c9d43f8e699fbf446d6df9dfd02a981b))
+
+* Introduce new utility functions in src/utils.py
+
+- Add `src/utils.py` implementing a function for UTC datetime creation.
+- Improve code modularity by separating common utilities. ([`d643ecb`](https://github.com/GGGoingdown/Github-Actions-Test/commit/d643ecb1bbb4804134a413b7caeba3225f75fa8a))
+
+* Enhance endpoint flexibility in main.py
+
+- Introduce a new API endpoint in `main.py` for item retrieval, supporting optional query parameters.
+- Enhance functionality to improve user querying capabilities. ([`5a3be1d`](https://github.com/GGGoingdown/Github-Actions-Test/commit/5a3be1db3ff2897a0da9585f44e43929c469fe88))
+
+
 ## v0.1.0 (2024-05-01)
 
 ### Ci
