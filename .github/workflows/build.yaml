@@ -1,11 +1,9 @@
 name: Build and Push to Google Artifact Registry
 
 on:
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: "Tag to build and push"
-        required: true
+  push:
+    paths:
+      - "CHANGELOG.md"
 
 env:
   PROJECT_ID: earthbook2
