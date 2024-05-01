@@ -2,6 +2,13 @@
 
 
 
+## v0.12.1 (2024-05-01)
+
+### Fix
+
+* fix(api): update trigger condition ([`6995e68`](https://github.com/GGGoingdown/Github-Actions-Test/commit/6995e684fb4d0319d9651e788f5c1e5dd54096a4))
+
+
 ## v0.12.0 (2024-05-01)
 
 ### Feature
