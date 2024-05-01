@@ -2,6 +2,13 @@
 
 
 
+## v0.8.0 (2024-05-01)
+
+### Feature
+
+* feat: update version ([`73a44a3`](https://github.com/GGGoingdown/Github-Actions-Test/commit/73a44a39746e3f2fc3f89da5b1a67e93c2a48327))
+
+
 ## v0.7.0 (2024-05-01)
 
 ### Feature
