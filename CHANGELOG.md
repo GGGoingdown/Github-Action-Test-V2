@@ -2,6 +2,17 @@
 
 
 
+## v0.5.0 (2024-05-01)
+
+### Feature
+
+* feat: Add cross-user item read API endpoint
+
+- Introduce new API endpoint in `src/api.py` for reading user items with cross-user context capabilities.
+- Ensure changes are scalable and maintain current security protocols.
+- Optimize API performance to handle increased query loads efficiently. ([`3e4dbf9`](https://github.com/GGGoingdown/Github-Actions-Test/commit/3e4dbf963b6f4b0ac8f302f9c9cbd9b8874d5e33))
+
+
 ## v0.4.0 (2024-05-01)
 
 ### Build
