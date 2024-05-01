@@ -32,3 +32,8 @@ def read_items(q: str = None):
 @router.get("/items/{item_id}/users/{user_id}")
 def read_item_user(item_id: int, user_id: str, q: str = None):
     return {"item_id": item_id, "user_id": user_id, "q": q}
+
+
+@router.get("/items/{item_id}/users/{user_id}/items/{item_id2}")
+def read_item_user_item(item_id: int, user_id: str, item_id2: int, q: str = None):
+    return {"item_id": item_id, "user_id": user_id, "item_id2": item_id2, "q": q}
