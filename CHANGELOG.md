@@ -2,6 +2,13 @@
 
 
 
+## v0.15.0 (2024-05-01)
+
+### Feature
+
+* feat(api): update github actions ([`7fdac3c`](https://github.com/GGGoingdown/Github-Actions-Test/commit/7fdac3c9b0a75b18d330beddcc30f17c0a68142f))
+
+
 ## v0.14.0 (2024-05-01)
 
 ### Feature
