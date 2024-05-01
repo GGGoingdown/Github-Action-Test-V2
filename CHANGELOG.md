@@ -2,6 +2,13 @@
 
 
 
+## v0.18.0 (2024-05-01)
+
+### Feature
+
+* feat: update github workflows to outputs ([`8a7aed1`](https://github.com/GGGoingdown/Github-Actions-Test/commit/8a7aed1a6312a0fff0abda49a4e03b677b93bc79))
+
+
 ## v0.17.0 (2024-05-01)
 
 ### Feature
