@@ -2,6 +2,26 @@
 
 
 
+## v0.14.0 (2024-05-01)
+
+### Feature
+
+* feat(api): update github actions ([`3340f4b`](https://github.com/GGGoingdown/Github-Actions-Test/commit/3340f4bf82e51870173ca7cf75a0cc8c8c309d1f))
+
+### Unknown
+
+* Refine GitHub Actions release workflow
+
+- Simplify syntax in GitHub Actions release workflow.
+- Ensure consistency and efficiency in CI/CD processes. ([`e54b532`](https://github.com/GGGoingdown/Github-Actions-Test/commit/e54b532ab5298c7c4eb156b5c4dd2b5a7ea68163))
+
+* Refine GitHub action triggers for releases
+
+- Update GitHub Actions workflow to trigger tasks only for new releases.
+- Ensure resource optimization by avoiding unnecessary workflow runs.
+- Improve the efficiency of deployment processes. ([`e2272c5`](https://github.com/GGGoingdown/Github-Actions-Test/commit/e2272c56d7b1944fe34085ade50e94fa6c2ef77f))
+
+
 ## v0.13.0 (2024-05-01)
 
 ### Feature
