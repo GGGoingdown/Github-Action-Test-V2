@@ -2,6 +2,25 @@
 
 
 
+## v0.13.0 (2024-05-01)
+
+### Feature
+
+* feat(api): update api ([`354a1a5`](https://github.com/GGGoingdown/Github-Actions-Test/commit/354a1a52672a689b2b39a2e43b7e6920f0c793df))
+
+### Unknown
+
+* Refine post-release workflow conditions
+
+- Update GitHub Actions workflow to only perform post-release tasks when `no_release` is specified.
+- Ensure modifications align with the current release strategy to avoid unintended deployments. ([`b5296f0`](https://github.com/GGGoingdown/Github-Actions-Test/commit/b5296f066454ef89d187845a394fb60882bfa30f))
+
+* Enhance README with updated sections
+
+- Update README.md to include new sections detailing recent changes and updates.
+- Ensure documentation reflects the latest project status and functionalities. ([`0f7b61f`](https://github.com/GGGoingdown/Github-Actions-Test/commit/0f7b61f5462b004de2fd192f29ae65937acb753b))
+
+
 ## v0.12.3 (2024-05-01)
 
 ### Fix
