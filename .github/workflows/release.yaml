@@ -16,7 +16,9 @@ jobs:
       contents: write
 
     outputs:
-      released: ${{ steps.check_release.outputs.released }}
+      released: ${{ steps.semantic.outputs.released }}
+      version: ${{ steps.semantic.outputs.version }}
+      tag: ${{ steps.semantic.outputs.tag }}
 
     steps:
       - uses: actions/checkout@v3
@@ -24,17 +26,15 @@ jobs:
           fetch-depth: 0
 
       - name: Python Semantic Release
-        id: release
+        id: semantic
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: Check release
-        id: check_release
+        if: steps.semantic.outputs.released == 'true'
         run: |
-          echo "::set-output name=released::true"  # 这里需要您自定义逻辑来检查是否真的有新版本
-
-
+          echo "Release was successful. Version: ${{ steps.semantic.outputs.version }}, Tag: ${{ steps.semantic.outputs.tag }}"
 
   build-push-artifact:
     needs: release
