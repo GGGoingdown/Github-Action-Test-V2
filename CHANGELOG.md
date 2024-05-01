@@ -2,11 +2,24 @@
 
 
 
+## v0.12.2 (2024-05-01)
+
+### Fix
+
+* fix(api): update github token to PAT ([`46bc495`](https://github.com/GGGoingdown/Github-Actions-Test/commit/46bc49545a9c593fce4dbe540202a60e736a986c))
+
+### Unknown
+
+* Standardize module naming conventions
+
+- Update module naming in changelog from &#39;api&#39; to &#39;apis&#39; for consistency and clarity. ([`242f4ee`](https://github.com/GGGoingdown/Github-Actions-Test/commit/242f4ee2b15a531dceb5f116d541b5bbdef42163))
+
+
 ## v0.12.1 (2024-05-01)
 
 ### Fix
 
-* fix(apis): update trigger condition ([`6995e68`](https://github.com/GGGoingdown/Github-Actions-Test/commit/6995e684fb4d0319d9651e788f5c1e5dd54096a4))
+* fix(api): update trigger condition ([`6995e68`](https://github.com/GGGoingdown/Github-Actions-Test/commit/6995e684fb4d0319d9651e788f5c1e5dd54096a4))
 
 
 ## v0.12.0 (2024-05-01)
