@@ -2,6 +2,16 @@
 
 
 
+## v0.3.0 (2024-05-01)
+
+### Refactor
+
+* refactor: Refine versioning strategy for refactor commits
+
+- Update semantic release configuration in `pyproject.toml` to classify &#39;refactor&#39; commits as minor version bumps.
+- Ensure some file changes are too extensive, resulting in their omission from the diff summary. ([`9dfdc8d`](https://github.com/GGGoingdown/Github-Actions-Test/commit/9dfdc8d3aeefd34bf126e5133463affea6f1b375))
+
+
 ## v0.2.0 (2024-05-01)
 
 ### Feature
