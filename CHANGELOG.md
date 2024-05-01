@@ -2,6 +2,13 @@
 
 
 
+## v0.12.3 (2024-05-01)
+
+### Fix
+
+* fix(api): get output release ([`ad03bd8`](https://github.com/GGGoingdown/Github-Actions-Test/commit/ad03bd80580cdae156a650df124d95044dae5bb0))
+
+
 ## v0.12.2 (2024-05-01)
 
 ### Fix
