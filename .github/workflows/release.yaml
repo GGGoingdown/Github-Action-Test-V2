@@ -15,6 +15,9 @@ jobs:
       id-token: write
       contents: write
 
+    outputs:
+      released: ${{ steps.check_release.outputs.released }}
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -25,6 +28,13 @@ jobs:
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Check release
+        id: check_release
+        run: |
+          echo "::set-output name=released::true"  # 这里需要您自定义逻辑来检查是否真的有新版本
+
+
 
   build-push-artifact:
     needs: release
