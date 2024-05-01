@@ -2,6 +2,32 @@
 
 
 
+## v0.4.0 (2024-05-01)
+
+### Build
+
+* build: Enhance CI/CD with Docker and notifications
+
+- Introduce a new GitHub Actions workflow for Docker image automation, improving the build and deployment process.
+- Extend automation to include Docker authentication and image tagging to streamline releases.
+- Implement notification integration by configuring status updates to a Telegram chat group, enhancing communication and tracking of build statuses. ([`ccacefd`](https://github.com/GGGoingdown/Github-Actions-Test/commit/ccacefd33ec7f374dd3ca82d7232b3f8b692fdeb))
+
+### Feature
+
+* feat(API): Introduce user-context item fetch API endpoint
+
+- Add a new API endpoint to handle fetching an item in relation to both a user and another item.
+- Ensure the new endpoint integrates seamlessly with existing system architecture and user permissions. ([`9360ee0`](https://github.com/GGGoingdown/Github-Actions-Test/commit/9360ee07864f2ba0f742c9597bb813ec21df59ab))
+
+### Unknown
+
+* Optimize workflow triggers and cleanup steps
+
+- Update the build workflow trigger in `.github/workflows/build.yaml` to activate on any tag push instead of waiting for `Semantic Release` completion.
+- Simplify the workflow by removing conditions that check for a successful previous `workflow_run`.
+- Eliminate redundant steps in the workflow related to acquiring the current git tag. ([`c87f33b`](https://github.com/GGGoingdown/Github-Actions-Test/commit/c87f33b06fd7cd275b509a9b8fd82c158571354d))
+
+
 ## v0.3.0 (2024-05-01)
 
 ### Refactor
