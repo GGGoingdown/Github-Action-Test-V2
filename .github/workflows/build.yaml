@@ -2,8 +2,8 @@ name: Build and Push to Google Artifact Registry
 
 on:
   push:
-    paths:
-      - "CHANGELOG.md"
+    tags:
+      - "*"
 
 env:
   PROJECT_ID: earthbook2
