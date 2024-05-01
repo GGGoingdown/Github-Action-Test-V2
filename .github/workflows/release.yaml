@@ -19,6 +19,11 @@ jobs:
           fetch-depth: 0
 
       - name: Python Semantic Release
+        id: release
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Perform tasks
+        if: ${{ steps.release.outputs.released }} == 'true'
+        run: echo "Performing tasks after a new release"
