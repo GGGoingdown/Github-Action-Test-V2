@@ -2,6 +2,13 @@
 
 
 
+## v0.10.0 (2024-05-01)
+
+### Feature
+
+* feat: trigger on master branch ([`42b315c`](https://github.com/GGGoingdown/Github-Actions-Test/commit/42b315c07a017b55310956d43d9c6348252d09d9))
+
+
 ## v0.9.0 (2024-05-01)
 
 ### Feature
