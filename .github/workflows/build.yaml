@@ -3,7 +3,7 @@ name: Build and Push to Google Artifact Registry
 on:
   push:
     tags:
-      - "*"
+      - "v*"
 
 env:
   PROJECT_ID: earthbook2
