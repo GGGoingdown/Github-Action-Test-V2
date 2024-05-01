@@ -2,6 +2,30 @@
 
 
 
+## v0.6.0 (2024-05-01)
+
+### Feature
+
+* feat: Enhance API and refine CI trigger conditions
+
+- Introduce a new API endpoint to manage an expanded item hierarchy level in `src/api.py`.
+- Modify GitHub Actions in `.github/workflows/build.yaml` to trigger builds exclusively on tagged commits prefixed with &#39;v&#39;. ([`790bc2f`](https://github.com/GGGoingdown/Github-Actions-Test/commit/790bc2f20c0244d13accde72dad18d719bbc6936))
+
+### Unknown
+
+* feat :Refine project configuration settings
+
+- Update the file path for version variables in semantic_release configuration to ensure correct versioning.
+- Review extensive changes in several large files for which detailed diffs were not provided. ([`1ea049b`](https://github.com/GGGoingdown/Github-Actions-Test/commit/1ea049bffbbe322c5cacfabee2bfef0c3f27feeb))
+
+* Refine project configuration settings
+
+- Update the version formatting in `pyproject.toml` to adhere to standards.
+- Improve code readability and maintainability across various modules.
+- Enhance performance by optimizing key functions and algorithms.
+- Address and fix reported bugs to improve software stability. ([`651640a`](https://github.com/GGGoingdown/Github-Actions-Test/commit/651640a97c694ca8aefd590fe2689bd1e593163c))
+
+
 ## v0.5.0 (2024-05-01)
 
 ### Feature
