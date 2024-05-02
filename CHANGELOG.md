@@ -2,6 +2,17 @@
 
 
 
+## v2.0.0 (2024-05-02)
+
+### Breaking
+
+* feat: Refactor item and user query endpoints
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+
+- Remove deprecated item and user query endpoints from `src/api.py` to improve API performance and maintainability. ([`b9d82d9`](https://github.com/GGGoingdown/Github-Actions-Test/commit/b9d82d964fde7341e88167cb317a19a55f054c98))
+
+
 ## v1.0.0 (2024-05-02)
 
 ### Breaking
