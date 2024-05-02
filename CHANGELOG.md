@@ -2,6 +2,13 @@
 
 
 
+## v1.0.0 (2024-05-02)
+
+### Breaking
+
+* feat!: remove some apis ([`be83516`](https://github.com/GGGoingdown/Github-Actions-Test/commit/be835167759d1ae778e1f4b9e342f48c3bdcc24a))
+
+
 ## v0.18.0 (2024-05-01)
 
 ### Feature
