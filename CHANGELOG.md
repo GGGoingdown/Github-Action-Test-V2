@@ -2,6 +2,26 @@
 
 
 
+## v3.1.0 (2024-06-06)
+
+### Feature
+
+* feat: Bump project version to 4.0.0
+
+- Upgrade the system-wide version to `4.0.0` across multiple files.
+- Align software versioning consistently to `4.0.0` in preparation for the new major release. ([`abb7384`](https://github.com/GGGoingdown/Github-Actions-Test/commit/abb738444f2508d8267a33d7407dce5cd0a95992))
+
+
+## v3.0.0 (2024-06-06)
+
+### Feature
+
+* feat: Standardize GitHub Action security tokens
+
+- Update GitHub Actions release job to use the `GITHUB_TOKEN` for improved security and compliance.
+- Ensure alignment with GitHub&#39;s best practices by modifying the token variable name in the workflow configuration. ([`c62abcb`](https://github.com/GGGoingdown/Github-Actions-Test/commit/c62abcb35efad3aabbdcbc056036d3c95a66d76b))
+
+
 ## v2.1.0 (2024-06-06)
 
 ### Feature
