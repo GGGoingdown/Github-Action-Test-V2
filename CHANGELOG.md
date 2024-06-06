@@ -2,7 +2,21 @@
 
 
 
-## v3.1.0 (2024-06-06)
+## v3.2.0 (2024-06-06)
+
+### Feature
+
+* feat: Update README for project version bump to 5
+
+- Update README.md to reflect changes for version 5 upgrade
+- Review files with extensive changes for detailed evaluation ([`f3d1057`](https://github.com/GGGoingdown/Github-Actions-Test/commit/f3d1057d90dee06c6e2c37aefa1f947444fde02d))
+
+### Unknown
+
+* Update .version ([`4afaab1`](https://github.com/GGGoingdown/Github-Actions-Test/commit/4afaab12794c65f41601b115f17f6813fee601b1))
+
+
+## v5.0.0 (2024-06-06)
 
 ### Feature
 
