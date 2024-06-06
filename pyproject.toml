@@ -1,6 +1,6 @@
 [project]
 name = "Github-Actions-Demo"
-version = "0.1.0"
+version = "3.0.0"
 description = "Default template for PDM package"
 authors = [
     {name = "GGGoingdown", email = "eddiepai0401@gmail.com"},
