@@ -33,6 +33,11 @@ match = "(main|master)"
 prerelease_token = "rc"
 prerelease = false
 
+[tool.semantic_release.branches."6.x.x"]
+match = "6.x.x"
+prerelease = true
+prerelease_token = "rc"
+
 [tool.semantic_release.changelog]
 template_dir = "templates"
 changelog_file = "CHANGELOG.md"
