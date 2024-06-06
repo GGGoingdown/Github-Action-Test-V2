@@ -2,6 +2,16 @@
 
 
 
+## v2.1.0 (2024-06-06)
+
+### Feature
+
+* feat: version 3.0.0 release updates
+
+- Increment the project version to `3.0.0` to reflect major changes.
+- Introduce a new `.version` file to maintain the version separately. ([`22c7b78`](https://github.com/GGGoingdown/Github-Actions-Test/commit/22c7b78e708fd122066b756b1fe843bc9098293e))
+
+
 ## v2.0.0 (2024-05-02)
 
 ### Breaking
